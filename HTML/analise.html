@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analisar | GardenLab</title>
+
+    <link rel="stylesheet" href="../CSS/main.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span>
+            Garden<span>Lab</span>
+        </a>
+
+        <nav class="nav">
+
+            <a href="index.html">Início</a>
+
+            <a href="analise.html" class="active">
+                Analisar
+            </a>
+
+            <a href="pesquisa.html">
+                Pesquisas
+            </a>
+
+            <a href="chat.html">
+                Chat IA
+            </a>
+
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <a href="login.html" class="btn btn-outline">
+                Entrar
+            </a>
+
+            <a href="cadastro.html" class="btn btn-primary">
+                Criar conta
+            </a>
+
+        </div>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+    </header>
+
+    <main class="page">
+
+        <section class="page-heading">
+
+            <span class="section-tag">
+                ANÁLISE
+            </span>
+
+            <h1>
+                Análise sua planta
+            </h1>
+
+            <p>
+                Escolha uma planta e informe algumas características
+                ou envie uma imagem para análise.
+            </p>
+
+        </section>
+
+        <section class="analysis-container">
+
+            <div class="analysis-step">
+
+                <span class="step-number active">
+                    1
+                </span>
+
+                <div>
+                    <strong>
+                        Escolha a planta
+                    </strong>
+
+                    <small>
+                        Selecione uma espécie
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="analysis-step">
+
+                <span class="step-number">
+                    2
+                </span>
+
+                <div>
+                    <strong>
+                        Informe os sintomas
+                    </strong>
+
+                    <small>
+                        Responda algumas perguntas
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="analysis-step">
+
+                <span class="step-number">
+                    3
+                </span>
+
+                <div>
+                    <strong>
+                        Resultado
+                    </strong>
+
+                    <small>
+                        Visualize a análise
+                    </small>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- IMAGEM -->
+
+        <section class="analysis-box">
+
+            <div class="box-heading">
+
+                <span class="section-tag">
+                    ANÁLISE POR IMAGEM
+                </span>
+
+                <h2>
+                    Envie uma foto da planta
+                </h2>
+
+                <p>
+                    Esta área será integrada ao modelo de classificação
+                    na segunda etapa do projeto.
+                </p>
+
+            </div>
+
+
+            <label class="upload-area" for="plantImage">
+
+                <span class="upload-icon">
+                    📷
+                </span>
+
+                <strong>
+                    Clique para selecionar uma imagem
+                </strong>
+
+                <small>
+                    PNG, JPG ou JPEG
+                </small>
+
+                <input
+                    type="file"
+                    id="plantImage"
+                    accept="image/png,image/jpeg"
+                >
+
+            </label>
+
+
+            <div
+                class="image-preview"
+                id="imagePreview"
+            ></div>
+
+
+            <button
+                class="btn btn-primary btn-large"
+                id="analyzeImage"
+            >
+                Analisar imagem
+            </button>
+
+        </section>
+
+
+        <!-- RESULTADO -->
+
+        <section
+            class="result-box hidden"
+            id="resultBox"
+        >
+
+            <div class="result-header">
+
+                <div>
+
+                    <span class="section-tag">
+                        RESULTADO
+                    </span>
+
+                    <h2>
+                        Análise concluída
+                    </h2>
+
+                </div>
+
+                <div class="confidence">
+                    <strong id="confidence">
+                        92%
+                    </strong>
+
+                    <span>
+                        confiança
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="result-content">
+
+                <div class="result-icon">
+                    🌿
+                </div>
+
+                <div>
+
+                    <span>
+                        Possível condição
+                    </span>
+
+                    <h3 id="resultTitle">
+                        Possível alteração na planta
+                    </h3>
+
+                    <p id="resultDescription">
+                        O resultado apresentado é apenas uma
+                        simulação para o protótipo.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="warning">
+
+                <strong>
+                    Importante
+                </strong>
+
+                <p>
+                    Esta análise é experimental e não substitui
+                    a avaliação de um profissional.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 GardenLab
+            </span>
+
+            <span>
+                Projeto acadêmico
+            </span>
+
+        </div>
+
+    </footer>
+
+    <script src="../Java Script/main.js"></script>
+    <script src="../Java Script/analise.js"></script>
+
+</body>
+
+</html>

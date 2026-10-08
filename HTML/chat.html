@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat IA | GardenLab</title>
+
+    <link rel="stylesheet" href="../CSS/main.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span>
+            Garden<span>Lab</span>
+        </a>
+
+        <nav class="nav">
+
+            <a href="index.html">Início</a>
+            <a href="analise.html">Analisar</a>
+            <a href="pesquisa.html">Pesquisas</a>
+            <a href="chat.html" class="active">Chat IA</a>
+            <a href="sobre.html">Sobre</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <a href="login.html" class="btn btn-outline">
+                Entrar
+            </a>
+
+            <a href="cadastro.html" class="btn btn-primary">
+                Criar conta
+            </a>
+
+        </div>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+    </header>
+
+    <main class="page">
+
+        <section class="page-heading">
+
+            <span class="section-tag">
+                ASSISTENTE
+            </span>
+
+            <h1>
+                Converse com o GardenLab
+            </h1>
+
+            <p>
+                Tire dúvidas sobre plantas e possíveis sintomas.
+            </p>
+
+        </section>
+
+
+        <section class="chat-container">
+
+            <div class="chat-header">
+
+                <div class="chat-avatar">
+                    ✦
+                </div>
+
+                <div>
+
+                    <strong>
+                        GardenLab IA
+                    </strong>
+
+                    <small>
+                        Assistente experimental
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="message assistant">
+
+                    Olá! Posso ajudar você a entender
+                    melhor os sintomas da sua planta.
+
+                </div>
+
+            </div>
+
+            <div class="quick-actions">
+
+                <button data-question="Minha folha está amarela.">
+                    Folha amarela
+                </button>
+
+                <button data-question="Minha planta tem manchas.">
+                    Manchas
+                </button>
+
+                <button data-question="Como cuidar da planta?">
+                    Cuidados
+                </button>
+
+            </div>
+
+
+            <form class="chat-form" id="chatForm">
+
+                <input
+                    type="text"
+                    id="chatInput"
+                    placeholder="Digite sua pergunta..."
+                    autocomplete="off"
+                >
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <span>© 2026 GardenLab</span>
+            <span>Projeto acadêmico</span>
+
+        </div>
+
+    </footer>
+
+    <script src="../Java Script/main.js"></script>
+    <script src="../Java Script/chat.js"></script>
+
+</body>
+
+</html>
